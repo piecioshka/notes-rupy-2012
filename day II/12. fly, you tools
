@@ -1,0 +1,41 @@
+Fly, You tools!
+===============
+
+Prelegent: Piotr Szotkowski
+
+@chastell
+
+1) Git
+git commit -m "git init" --allow-empty
+
+> sponge
+
+git rebase --interactive --autosquash
+
+git update-index --assume-unchanged .rvmc
+git status --short --branch
+
+git checkout master == git checkout -
+
+git add|checkout|stash -p ( goes one by one as patch )
+
+
+2) PostreSQL
+
+psql rupy
+
+CREATE TYPE track AS ENUM ('1', '2', 'both');
+
+pv -- pipe viewer
+
+diff <(grep -r foo some_dir) <(grep -f bar another_dir)
+
+pgrep + pkill
+
+watch
+
+timeout 
+
+ncdu - check @?
+
+proxylocal - expose a logal port the public 

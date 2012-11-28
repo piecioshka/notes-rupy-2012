@@ -1,0 +1,21 @@
+elixer
+
+@elixirlang / elixir-lang.org
+
+Why? Erlang
+
+Used:
+- amazon,
+- facebook (czat)
+- riak (open soice project)
+
+Goals
+
+Productivity
+
+Everything is an expression
+
+-- CUT HERE ---
+defmodule MathTest 
+
+-- CUT HERE ---

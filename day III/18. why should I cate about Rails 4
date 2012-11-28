@@ -1,0 +1,16 @@
+Why should I care about Rails 4
+===============================
+
+Prelegent: Steve Klabnik
+@steveklabnik
+
+Redis as Cache manager
+
+# job.respond_to?(:run)
+# => true
+Rails.queue.push(job)
+
+gem install acitve_model_serializers
+gem install rails-api
+gem install routing_concerns
+

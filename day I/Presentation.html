@@ -1,0 +1,1363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0036)http://slides.jcoglan.com/soa-rupy#1 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <title>Presentation</title>
+
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="./Presentation_files/reset.css" type="text/css">
+  <link rel="stylesheet" href="./Presentation_files/showoff.css" type="text/css">
+
+  <link type="text/css" href="./Presentation_files/fg.menu.css" media="screen" rel="stylesheet">
+  <link type="text/css" href="./Presentation_files/ui.all.css" media="screen" rel="stylesheet">
+  <link type="text/css" href="./Presentation_files/sh_style.css" rel="stylesheet">
+
+  <script type="text/javascript" async="" src="./Presentation_files/ga.js"></script><script type="text/javascript" src="./Presentation_files/jquery-1.4.2.min.js"></script><style type="text/css"></style>
+  <script type="text/javascript" src="./Presentation_files/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./Presentation_files/jquery-print.js"></script>
+  <script type="text/javascript" src="./Presentation_files/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./Presentation_files/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./Presentation_files/fg.menu.js"></script>
+  <script type="text/javascript" src="./Presentation_files/showoff.js"></script>
+  <script type="text/javascript" src="./Presentation_files/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./Presentation_files/sh_main.min.js"></script>
+  <script type="text/javascript" src="./Presentation_files/core.js"></script>
+  <script type="text/javascript" src="./Presentation_files/showoffcore.js"></script>
+  <script type="text/javascript" src="./Presentation_files/coffee-script.js"></script>
+
+  
+
+  
+    <link rel="stylesheet" href="./Presentation_files/style.css" type="text/css">
+  
+
+  
+    <script type="text/javascript" src="./Presentation_files/analytics.js"></script>
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(true, 'soa-rupy/');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="http://slides.jcoglan.com/soa-rupy#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu" style="display: none; "><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"><ul><li><a rel="0" href="http://slides.jcoglan.com/soa-rupy#">intro</a><ul><li><a rel="0" href="http://slides.jcoglan.com/soa-rupy#">intro</a><ul><li><a rel="0" href="http://slides.jcoglan.com/soa-rupy#">1. 
+http://slides.jcogl</a></li><li><a rel="1" href="http://slides.jcoglan.com/soa-rupy#">2. 
+Who am I?
+
+
+Full-st</a></li><li></li><li></li></ul></li><li></li><li></li></ul></li><li><a rel="2" href="http://slides.jcoglan.com/soa-rupy#">dependencies</a><ul><li><a rel="2" href="http://slides.jcoglan.com/soa-rupy#">dependencies</a><ul><li><a rel="2" href="http://slides.jcoglan.com/soa-rupy#">3. 
+Dependency hell
+
+An</a></li><li><a rel="3" href="http://slides.jcoglan.com/soa-rupy#">4. 
+The big ball of mud</a></li><li><a rel="4" href="http://slides.jcoglan.com/soa-rupy#">5. 
+Problems
+
+
+Superfic</a></li><li><a rel="5" href="http://slides.jcoglan.com/soa-rupy#">6. 
+Productivity cliff
+</a></li><li><a rel="6" href="http://slides.jcoglan.com/soa-rupy#">7. 
+Why did this happen</a></li><li><a rel="7" href="http://slides.jcoglan.com/soa-rupy#">8. 
+
+
+http://www.flickr</a></li><li><a rel="8" href="http://slides.jcoglan.com/soa-rupy#">9. 
+What did we do abou</a></li><li><a rel="9" href="http://slides.jcoglan.com/soa-rupy#">10. 
+Step 1:
+
+Extract sh</a></li><li><a rel="10" href="http://slides.jcoglan.com/soa-rupy#">11. 
+app/
+    controller</a></li><li><a rel="11" href="http://slides.jcoglan.com/soa-rupy#">12. 
+We extracted infras</a></li><li><a rel="12" href="http://slides.jcoglan.com/soa-rupy#">13. 
+Result:
+
+
+We could </a></li><li><a rel="13" href="http://slides.jcoglan.com/soa-rupy#">14. 
+Step 2:
+
+Encourage </a></li><li><a rel="14" href="http://slides.jcoglan.com/soa-rupy#">15. 
+Should be easy to w</a></li><li><a rel="15" href="http://slides.jcoglan.com/soa-rupy#">16. 
+We made a dependenc</a></li><li><a rel="16" href="http://slides.jcoglan.com/soa-rupy#">17. 
+Result:
+
+
+We were f</a></li><li><a rel="17" href="http://slides.jcoglan.com/soa-rupy#">18. 
+Bonus benefit
+
+We c</a></li><li><a rel="18" href="http://slides.jcoglan.com/soa-rupy#">19. 
+
+
+</a></li><li><a rel="19" href="http://slides.jcoglan.com/soa-rupy#">20. 
+We still have a pro</a></li><li><a rel="20" href="http://slides.jcoglan.com/soa-rupy#">21. 
+module Sinatra     </a></li><li><a rel="21" href="http://slides.jcoglan.com/soa-rupy#">22. 
+
+  80legs
+  aasm
+  </a></li><li><a rel="22" href="http://slides.jcoglan.com/soa-rupy#">23. 
+
+class Array
+  def </a></li><li><a rel="23" href="http://slides.jcoglan.com/soa-rupy#">24. 
+
+  80legs
+  aasm
+  </a></li><li><a rel="24" href="http://slides.jcoglan.com/soa-rupy#">25. 
+describe My::Awesom</a></li><li><a rel="25" href="http://slides.jcoglan.com/soa-rupy#">26. 
+
+  80legs
+  aasm
+  </a></li><li><a rel="26" href="http://slides.jcoglan.com/soa-rupy#">27. 
+Step 3:
+
+Break the </a></li><li></li><li></li></ul></li><li></li><li></li></ul></li><li><a rel="27" href="http://slides.jcoglan.com/soa-rupy#">services</a><ul><li><a rel="27" href="http://slides.jcoglan.com/soa-rupy#">services</a><ul><li><a rel="27" href="http://slides.jcoglan.com/soa-rupy#">28. 
+We abstracted share</a></li><li><a rel="28" href="http://slides.jcoglan.com/soa-rupy#">29. 
+ActiveRecord APIs r</a></li><li><a rel="29" href="http://slides.jcoglan.com/soa-rupy#">30. 
+Service APIs reflec</a></li><li><a rel="30" href="http://slides.jcoglan.com/soa-rupy#">31. 
+An object graph != </a></li><li><a rel="31" href="http://slides.jcoglan.com/soa-rupy#">32. 
+For a concert, we w</a></li><li><a rel="32" href="http://slides.jcoglan.com/soa-rupy#">33. 
+An graph-based API
+</a></li><li><a rel="33" href="http://slides.jcoglan.com/soa-rupy#">34. 
+A use-case-based AP</a></li><li><a rel="34" href="http://slides.jcoglan.com/soa-rupy#">35. 
+
+Remember that the </a></li><li><a rel="35" href="http://slides.jcoglan.com/soa-rupy#">36. 
+Result:
+
+
+An explic</a></li><li></li><li></li></ul></li><li></li><li></li></ul></li><li><a rel="36" href="http://slides.jcoglan.com/soa-rupy#">clients</a><ul><li><a rel="36" href="http://slides.jcoglan.com/soa-rupy#">clients</a><ul><li><a rel="36" href="http://slides.jcoglan.com/soa-rupy#">37. 
+HTTP introduces com</a></li><li><a rel="37" href="http://slides.jcoglan.com/soa-rupy#">38. 
+Solve each problem </a></li><li><a rel="38" href="http://slides.jcoglan.com/soa-rupy#">39. 
+Client-side goals
+
+</a></li><li><a rel="39" href="http://slides.jcoglan.com/soa-rupy#">40. 
+Difficult
+
+uri = UR</a></li><li><a rel="40" href="http://slides.jcoglan.com/soa-rupy#">41. 
+Easy
+
+http = Songki</a></li><li><a rel="41" href="http://slides.jcoglan.com/soa-rupy#">42. 
+Songkick::Transport</a></li><li><a rel="42" href="http://slides.jcoglan.com/soa-rupy#">43. 
+module Services
+
+  </a></li><li><a rel="43" href="http://slides.jcoglan.com/soa-rupy#">44. 
+module Models
+
+  cl</a></li><li><a rel="44" href="http://slides.jcoglan.com/soa-rupy#">45. 
+before do
+  @http  </a></li><li><a rel="45" href="http://slides.jcoglan.com/soa-rupy#">46. 
+it "tells the servi</a></li><li><a rel="46" href="http://slides.jcoglan.com/soa-rupy#">47. 
+Stubbable
+
+http.get</a></li><li><a rel="47" href="http://slides.jcoglan.com/soa-rupy#">48. 
+Not stubbable
+
+http</a></li><li><a rel="48" href="http://slides.jcoglan.com/soa-rupy#">49. 
+Flexibility vs. con</a></li><li><a rel="49" href="http://slides.jcoglan.com/soa-rupy#">50. 
+Flexible
+
+http   = </a></li><li><a rel="50" href="http://slides.jcoglan.com/soa-rupy#">51. 
+Convenient
+
+user = </a></li><li><a rel="51" href="http://slides.jcoglan.com/soa-rupy#">52. 
+Provide a convenien</a></li><li><a rel="52" href="http://slides.jcoglan.com/soa-rupy#">53. 
+Result:
+
+
+Convenien</a></li><li></li><li></li></ul></li><li></li><li></li></ul></li><li><a rel="53" href="http://slides.jcoglan.com/soa-rupy#">outro</a><ul><li><a rel="53" href="http://slides.jcoglan.com/soa-rupy#">outro</a><ul><li><a rel="53" href="http://slides.jcoglan.com/soa-rupy#">54. 
+Repeat after me
+
+So</a></li><li><a rel="54" href="http://slides.jcoglan.com/soa-rupy#">55. 
+Some advice
+
+Don’t </a></li><li><a rel="55" href="http://slides.jcoglan.com/soa-rupy#">56. 
+Thank you.
+
+
+http:/</a></li><li></li><li></li></ul></li><li></li><li></li></ul></li><li></li><li></li></ul></div>
+
+<div id="help">
+  <table>
+    <tbody><tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, →</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, ←</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+    <tr><td class="key">P</td><td>toggle pause</td></tr>
+  </tbody></table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onclick="prevStep();" value="prev">
+  <input type="submit" onclick="nextStep();" value="next">
+</div>
+
+<div id="preso" style="position: relative; "><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 57; opacity: 1; "><div class="content title" ref="intro/intro/1" style="margin-top: 264px; ">
+<h2>http://slides.jcoglan.com</h2>
+
+<h1>Breaking the big ball of mud</h1>
+
+<h2>James Coglan / @jcoglan</h2>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 55; opacity: 0; "><div class="content bullets" ref="intro/intro/2" style="margin-top: 240px; ">
+<h1>Who am I?</h1>
+
+<ul>
+<li>Full-stack developer at Songkick</li>
+<li>Open-source Ruby and JavaScript developer</li>
+<li>Author of Faye, Terminus, Vault</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 54; opacity: 0; "><div class="content title" ref="dependencies/dependencies/1" style="margin-top: 304px; ">
+<h1>Dependency hell</h1>
+
+<h2>And how we got out of it</h2>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 53; opacity: 0; "><div class="content listing" ref="dependencies/dependencies/2" style="margin-top: 60.5px; ">
+<h1>The big ball of mud</h1>
+
+<pre><code>app/
+    controllers/
+    models/
+    views/
+features/
+lib/
+vendor/
+    api/
+    batch_processing/
+    daemons/
+    file_store/
+    notifications/
+    web_scrapers/
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 52; opacity: 0; "><div class="content bullets" ref="dependencies/dependencies/3" style="margin-top: 184px; ">
+<h1>Problems</h1>
+
+<ul>
+<li><em>Superficially</em> modular</li>
+<li>Hidden circular dependencies</li>
+<li>Poor test organisation</li>
+<li>Monolithic deployment</li>
+<li>Change a submodule -&gt; rebuild the <strong>entire</strong> thing</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 51; opacity: 0; "><div class="content bullets" ref="dependencies/dependencies/4" style="margin-top: 240px; ">
+<h1>Productivity cliff</h1>
+
+<ul>
+<li>Distributed build took &gt; 2 hours</li>
+<li>Shipping anything took days</li>
+<li>Our jobs <strong>sucked</strong></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 50; opacity: 0; "><div class="content bullets" ref="dependencies/dependencies/5" style="margin-top: 240px; ">
+<h1>Why did this happen?</h1>
+
+<ul>
+<li>Focus on new features</li>
+<li>Ignorance of tech debt</li>
+<li>Small team can cope with complexity</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 49; opacity: 0; "><div class="content image center" ref="dependencies/dependencies/6" style="margin-top: 14px; ">
+<p><img src="./Presentation_files/rube.jpg" alt="Rube Goldberg Machine">
+
+</p><p>http://www.flickr.com/photos/freshwater2006/693945631/</p>
+<p></p>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 48; opacity: 0; "><div class="content bullets" ref="dependencies/dependencies/7" style="margin-top: 240px; ">
+<h1>What did we do about it?</h1>
+
+<ul>
+<li>Extract</li>
+<li>Refactor</li>
+<li>Abstract</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 47; opacity: 0; "><div class="content title" ref="dependencies/dependencies/8" style="margin-top: 304px; ">
+<h2>Step 1:</h2>
+
+<h1>Extract shared code</h1>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 46; opacity: 0; "><div class="content listing" ref="dependencies/dependencies/9" style="margin-top: 237.5px; ">
+<pre><code>app/
+    controllers/
+    models/           &lt;----- business logic
+    views/
+features/             --+
+lib/                    |--- support code
+spec/                 --+
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 45; opacity: 0; "><div class="content bullets" ref="dependencies/dependencies/10" style="margin-top: 228px; ">
+<h1>We extracted infrastructure and business logic</h1>
+
+<ul>
+<li>songkick-core</li>
+<li>songkick-domain</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 44; opacity: 0; "><div class="content bullets" ref="dependencies/dependencies/11" style="margin-top: 268px; ">
+<h1>Result:</h1>
+
+<ul>
+<li>We could extract things from the Rails app</li>
+<li>Components could be deployed separately</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 43; opacity: 0; "><div class="content title" ref="dependencies/dependencies/12" style="margin-top: 304px; ">
+<h2>Step 2:</h2>
+
+<h1>Encourage small libraries</h1>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 42; opacity: 0; "><div class="content bullets" ref="dependencies/dependencies/13" style="margin-top: 172px; ">
+<h1>Should be <em>easy</em> to write small modules</h1>
+
+<ul>
+<li>Easy to develop</li>
+<li>Easy to test</li>
+<li>Easy to glue together</li>
+<li>Easy to deploy</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 41; opacity: 0; "><div class="content bullets" ref="dependencies/dependencies/14" style="margin-top: 116px; ">
+<h1>We made a dependency manager</h1>
+
+<ul>
+<li>Modules must declare their dependencies</li>
+<li>No circular dependencies</li>
+<li>Cannot load code you do not depend on</li>
+<li>Versioning done with git</li>
+<li>Track which commits have been tested together</li>
+<li>Deploy mutually compatible commits</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 40; opacity: 0; "><div class="content bullets" ref="dependencies/dependencies/15" style="margin-top: 212px; ">
+<h1>Result:</h1>
+
+<ul>
+<li>We were forced to remove circular deps</li>
+<li>We extracted more shared modules</li>
+<li>We only re-tested what was necessary</li>
+<li>We could deploy things separately with confidence</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 39; opacity: 0; "><div class="content title" ref="dependencies/dependencies/16" style="margin-top: 304px; ">
+<h1>Bonus benefit</h1>
+
+<h2>We could <strong>see</strong> the dependency tree</h2>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 38; opacity: 0; "><div class="content image center dependencies" ref="dependencies/dependencies/17" style="margin-top: 14px; ">
+<p><img src="./Presentation_files/components.png" alt="Component dependencies">
+</p>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 37; opacity: 0; "><div class="content title" ref="dependencies/dependencies/18" style="margin-top: 304px; ">
+<h1>We still have a problem</h1>
+
+<h2>Gems: the cause of, and solution to, all life’s problems</h2>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 36; opacity: 0; "><div class="content" ref="dependencies/dependencies/19" style="margin-top: 159.5px; ">
+<pre class="sh_ruby sh_sourceCode"><code><span class="sh_keyword">module</span> Sinatra              <span class="sh_comment"># Sinatra</span>
+  <span class="sh_keyword">module</span> Helpers            <span class="sh_comment"># Sinatra::Helpers</span>
+  <span class="sh_keyword">end</span>
+
+  <span class="sh_keyword">class</span> Base                <span class="sh_comment"># Sinatra::Base</span>
+    <span class="sh_keyword">include</span> Helpers
+  <span class="sh_keyword">end</span>
+
+  <span class="sh_keyword">class</span> Application         <span class="sh_comment"># Sinatra::Application</span>
+  <span class="sh_keyword">end</span>
+<span class="sh_keyword">end</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 35; opacity: 0; "><div class="content gems" ref="dependencies/dependencies/20" style="margin-top: 104.5px; ">
+<ul>
+  <li>80legs</li>
+  <li>aasm</li>
+  <li>abstract</li>
+  <li>actionmailer</li>
+  <li>actionpack</li>
+  <li>activerecord</li>
+  <li>activerecord-nulldb-adapter</li>
+  <li>activeresource</li>
+  <li>activesupport</li>
+  <li>amazon-ec2</li>
+  <li>andand</li>
+  <li>apns</li>
+  <li>archive-tar-minitar</li>
+  <li>ar-extensions</li>
+  <li>arrayfields</li>
+  <li>asset_hat</li>
+  <li>bcrypt-ruby</li>
+  <li>bj</li>
+  <li>bson</li>
+  <li>bson_ext</li>
+  <li>builder</li>
+  <li>bundler</li>
+  <li>bunny</li>
+  <li>capistrano</li>
+  <li>capistrano-ec2group</li>
+  <li>capistrano-ext</li>
+  <li>capistrano_rsync_with_remote</li>
+  <li>capybara</li>
+  <li>celerity</li>
+  <li>cgi_multipart_eof_fix</li>
+  <li>childprocess</li>
+  <li>clickatell</li>
+  <li>columnize</li>
+  <li>commonwatir</li>
+  <li>crack</li>
+  <li>cssmin</li>
+  <li>cucumber</li>
+  <li>cucumber-rails</li>
+  <li>curb</li>
+  <li>daemons</li>
+  <li>database_cleaner</li>
+  <li>debulator</li>
+  <li>diff-lcs</li>
+</ul>
+<ul>
+  <li>dispatcher</li>
+  <li>dolphin</li>
+  <li>dolphin-redis</li>
+  <li>envjs</li>
+  <li>erubis</li>
+  <li>etc</li>
+  <li>eventful</li>
+  <li>eventmachine</li>
+  <li>extlib</li>
+  <li>ezcrypto</li>
+  <li>factory_girl</li>
+  <li>fakefs</li>
+  <li>fakeweb</li>
+  <li>faraday</li>
+  <li>fastercsv</li>
+  <li>fastthread</li>
+  <li>fast_trie</li>
+  <li>fattr</li>
+  <li>fcgi</li>
+  <li>feed-normalizer</li>
+  <li>ffi</li>
+  <li>firewatir</li>
+  <li>flexmock</li>
+  <li>forgery</li>
+  <li>garb</li>
+  <li>gem_plugin</li>
+  <li>geoip</li>
+  <li>gherkin</li>
+  <li>git_remote_branch</li>
+  <li>grit</li>
+  <li>guid</li>
+  <li>happymapper</li>
+  <li>harmony</li>
+  <li>highline</li>
+  <li>hoe</li>
+  <li>hpricot</li>
+  <li>htmlentities</li>
+  <li>httparty</li>
+  <li>httpclient</li>
+  <li>i18n</li>
+  <li>icalendar</li>
+  <li>imagesize</li>
+  <li>jake</li>
+</ul>
+<ul>
+  <li>janda</li>
+  <li>jazz_money</li>
+  <li>jeweler</li>
+  <li>johnson</li>
+  <li>jsmin</li>
+  <li>json</li>
+  <li>json_pure</li>
+  <li>kablame</li>
+  <li>kgio</li>
+  <li>km</li>
+  <li>libxml-ruby</li>
+  <li>lockfile</li>
+  <li>logging</li>
+  <li>lsof</li>
+  <li>main</li>
+  <li>mash</li>
+  <li>mechanize</li>
+  <li>mega_mutex</li>
+  <li>memcache-client</li>
+  <li>methodphitamine</li>
+  <li>mime-types</li>
+  <li>mislav-will_paginate</li>
+  <li>mms2r</li>
+  <li>mogilefs-client</li>
+  <li>mojombo-grit</li>
+  <li>mongo</li>
+  <li>mongo_ext</li>
+  <li>mongrel</li>
+  <li>msgpack</li>
+  <li>multi_json</li>
+  <li>multipart-post</li>
+  <li>multipass</li>
+  <li>mysql</li>
+  <li>netaddr</li>
+  <li>net-scp</li>
+  <li>net-sftp</li>
+  <li>net-ssh</li>
+  <li>net-ssh-gateway</li>
+  <li>nokogiri</li>
+  <li>oauth</li>
+  <li>open4</li>
+  <li>orderedhash</li>
+</ul>
+<ul>
+  <li>oyster</li>
+  <li>packr</li>
+  <li>parallel</li>
+  <li>parallel_tests</li>
+  <li>pbkdf2</li>
+  <li>polyglot</li>
+  <li>query_reviewer</li>
+  <li>rack</li>
+  <li>rack-bug</li>
+  <li>rack-protection</li>
+  <li>rack-proxy</li>
+  <li>rack-test</li>
+  <li>rails</li>
+  <li>raindrops</li>
+  <li>rake</li>
+  <li>rbtrace</li>
+  <li>rcov</li>
+  <li>RedCloth</li>
+  <li>redis</li>
+  <li>request-log-analyzer</li>
+  <li>retryable</li>
+  <li>right_aws</li>
+  <li>right_http_connection</li>
+  <li>rmagick</li>
+  <li>rr</li>
+  <li>rsolr</li>
+  <li>rspec</li>
+  <li>rspec-core</li>
+  <li>rspec-expectations</li>
+  <li>rspec-extra-formatters</li>
+  <li>rspec-mocks</li>
+  <li>rspec-rails</li>
+  <li>rubigen</li>
+  <li>rubyforge</li>
+  <li>ruby-hmac</li>
+  <li>ruby-openid</li>
+  <li>ruby-prof</li>
+  <li>rubyzip</li>
+  <li>s4t-utils</li>
+  <li>selenium-webdriver</li>
+  <li>sequel</li>
+  <li>service-stats</li>
+</ul>
+<ul>
+  <li>shared-mime-info</li>
+  <li>simple_oauth</li>
+  <li>simple-rss</li>
+  <li><em>sinatra</em></li>
+  <li>sk-process-management</li>
+  <li>smusher</li>
+  <li>solr-ruby</li>
+  <li>songkick-base-service</li>
+  <li>songkick-hammer</li>
+  <li>songkick-oauth2-provider</li>
+  <li>songkick-rack-middleware</li>
+  <li>songkick-recipes</li>
+  <li>songkick-transport</li>
+  <li>spacer</li>
+  <li>spork</li>
+  <li>sqlite3-ruby</li>
+  <li>stackdeck</li>
+  <li>stomp</li>
+  <li>syntax</li>
+  <li>SystemTimer</li>
+  <li>systemu</li>
+  <li>term-ansicolor</li>
+  <li>testswarm-client</li>
+  <li>thin</li>
+  <li>thor</li>
+  <li>tilt</li>
+  <li>timecop</li>
+  <li>tmail</li>
+  <li>tmm1-amqp</li>
+  <li>treetop</li>
+  <li>trollop</li>
+  <li>twitter</li>
+  <li>tzinfo</li>
+  <li>unicorn</li>
+  <li>unidecode</li>
+  <li>user-choices</li>
+  <li>webrat</li>
+  <li>weebl</li>
+  <li>will_paginate</li>
+  <li>xml-simple</li>
+  <li>xpath</li>
+  <li>yajl-ruby</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 34; opacity: 0; "><div class="content" ref="dependencies/dependencies/21" style="margin-top: 140px; ">
+<pre class="sh_ruby sh_sourceCode"><code>
+<span class="sh_keyword">class</span> Array
+  <span class="sh_keyword">def</span> from<span class="sh_symbol">(</span>position<span class="sh_symbol">)</span>    <span class="sh_keyword">def</span> to_sentence<span class="sh_symbol">(</span>options<span class="sh_symbol">)</span>
+
+  <span class="sh_keyword">def</span> to<span class="sh_symbol">(</span>position<span class="sh_symbol">)</span>      <span class="sh_keyword">def</span> to_formatted_s<span class="sh_symbol">(</span>format<span class="sh_symbol">)</span>
+
+  <span class="sh_keyword">def</span> second            <span class="sh_keyword">def</span> to_xml
+
+  <span class="sh_keyword">def</span> third             <span class="sh_keyword">def</span> to_json
+
+  <span class="sh_keyword">def</span> forty_two         <span class="sh_keyword">def</span> extract_<span class="sh_normal">options!</span>
+<span class="sh_keyword">end</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 33; opacity: 0; "><div class="content gems" ref="dependencies/dependencies/22" style="margin-top: 104.5px; ">
+<ul>
+  <li>80legs</li>
+  <li>aasm</li>
+  <li><em>abstract</em></li>
+  <li>actionmailer</li>
+  <li>actionpack</li>
+  <li>activerecord</li>
+  <li>activerecord-nulldb-adapter</li>
+  <li>activeresource</li>
+  <li><em>activesupport</em></li>
+  <li>amazon-ec2</li>
+  <li><em>andand</em></li>
+  <li><em>apns</em></li>
+  <li>archive-tar-minitar</li>
+  <li>ar-extensions</li>
+  <li><em>arrayfields</em></li>
+  <li>asset_hat</li>
+  <li>bcrypt-ruby</li>
+  <li>bj</li>
+  <li>bson</li>
+  <li>bson_ext</li>
+  <li><em>builder</em></li>
+  <li>bundler</li>
+  <li>bunny</li>
+  <li>capistrano</li>
+  <li>capistrano-ec2group</li>
+  <li>capistrano-ext</li>
+  <li>capistrano_rsync_with_remote</li>
+  <li>capybara</li>
+  <li>celerity</li>
+  <li>cgi_multipart_eof_fix</li>
+  <li>childprocess</li>
+  <li><em>clickatell</em></li>
+  <li>columnize</li>
+  <li>commonwatir</li>
+  <li><em>crack</em></li>
+  <li>cssmin</li>
+  <li><em>cucumber</em></li>
+  <li>cucumber-rails</li>
+  <li>curb</li>
+  <li>daemons</li>
+  <li>database_cleaner</li>
+  <li><em>debulator</em></li>
+  <li>diff-lcs</li>
+</ul>
+<ul>
+  <li>dispatcher</li>
+  <li>dolphin</li>
+  <li>dolphin-redis</li>
+  <li>envjs</li>
+  <li>erubis</li>
+  <li>etc</li>
+  <li><em>eventful</em></li>
+  <li><em>eventmachine</em></li>
+  <li><em>extlib</em></li>
+  <li>ezcrypto</li>
+  <li>factory_girl</li>
+  <li>fakefs</li>
+  <li>fakeweb</li>
+  <li>faraday</li>
+  <li><em>fastercsv</em></li>
+  <li>fastthread</li>
+  <li>fast_trie</li>
+  <li><em>fattr</em></li>
+  <li>fcgi</li>
+  <li>feed-normalizer</li>
+  <li>ffi</li>
+  <li>firewatir</li>
+  <li><em>flexmock</em></li>
+  <li>forgery</li>
+  <li><em>garb</em></li>
+  <li>gem_plugin</li>
+  <li>geoip</li>
+  <li><em>gherkin</em></li>
+  <li>git_remote_branch</li>
+  <li>grit</li>
+  <li>guid</li>
+  <li>happymapper</li>
+  <li>harmony</li>
+  <li>highline</li>
+  <li>hoe</li>
+  <li>hpricot</li>
+  <li>htmlentities</li>
+  <li>httparty</li>
+  <li>httpclient</li>
+  <li>i18n</li>
+  <li><em>icalendar</em></li>
+  <li>imagesize</li>
+  <li>jake</li>
+</ul>
+<ul>
+  <li>janda</li>
+  <li><em>jazz_money</em></li>
+  <li>jeweler</li>
+  <li>johnson</li>
+  <li>jsmin</li>
+  <li><em>json</em></li>
+  <li>json_pure</li>
+  <li>kablame</li>
+  <li>kgio</li>
+  <li>km</li>
+  <li>libxml-ruby</li>
+  <li>lockfile</li>
+  <li><em>logging</em></li>
+  <li>lsof</li>
+  <li><em>main</em></li>
+  <li><em>mash</em></li>
+  <li>mechanize</li>
+  <li>mega_mutex</li>
+  <li>memcache-client</li>
+  <li>methodphitamine</li>
+  <li>mime-types</li>
+  <li>mislav-will_paginate</li>
+  <li>mms2r</li>
+  <li>mogilefs-client</li>
+  <li>mojombo-grit</li>
+  <li>mongo</li>
+  <li>mongo_ext</li>
+  <li>mongrel</li>
+  <li><em>msgpack</em></li>
+  <li>multi_json</li>
+  <li>multipart-post</li>
+  <li>multipass</li>
+  <li>mysql</li>
+  <li>netaddr</li>
+  <li>net-scp</li>
+  <li>net-sftp</li>
+  <li>net-ssh</li>
+  <li>net-ssh-gateway</li>
+  <li>nokogiri</li>
+  <li>oauth</li>
+  <li>open4</li>
+  <li>orderedhash</li>
+</ul>
+<ul>
+  <li>oyster</li>
+  <li><em>packr</em></li>
+  <li>parallel</li>
+  <li>parallel_tests</li>
+  <li>pbkdf2</li>
+  <li><em>polyglot</em></li>
+  <li>query_reviewer</li>
+  <li>rack</li>
+  <li>rack-bug</li>
+  <li>rack-protection</li>
+  <li>rack-proxy</li>
+  <li>rack-test</li>
+  <li>rails</li>
+  <li>raindrops</li>
+  <li><em>rake</em></li>
+  <li>rbtrace</li>
+  <li>rcov</li>
+  <li>RedCloth</li>
+  <li>redis</li>
+  <li>request-log-analyzer</li>
+  <li>retryable</li>
+  <li><em>right_aws</em></li>
+  <li><em>right_http_connection</em></li>
+  <li>rmagick</li>
+  <li>rr</li>
+  <li>rsolr</li>
+  <li><em>rspec</em></li>
+  <li>rspec-core</li>
+  <li><em>rspec-expectations</em></li>
+  <li>rspec-extra-formatters</li>
+  <li>rspec-mocks</li>
+  <li>rspec-rails</li>
+  <li>rubigen</li>
+  <li>rubyforge</li>
+  <li>ruby-hmac</li>
+  <li>ruby-openid</li>
+  <li>ruby-prof</li>
+  <li>rubyzip</li>
+  <li>s4t-utils</li>
+  <li><em>selenium-webdriver</em></li>
+  <li>sequel</li>
+  <li>service-stats</li>
+</ul>
+<ul>
+  <li>shared-mime-info</li>
+  <li>simple_oauth</li>
+  <li>simple-rss</li>
+  <li>sinatra</li>
+  <li>sk-process-management</li>
+  <li>smusher</li>
+  <li>solr-ruby</li>
+  <li>songkick-base-service</li>
+  <li>songkick-hammer</li>
+  <li>songkick-oauth2-provider</li>
+  <li>songkick-rack-middleware</li>
+  <li>songkick-recipes</li>
+  <li>songkick-transport</li>
+  <li>spacer</li>
+  <li>spork</li>
+  <li>sqlite3-ruby</li>
+  <li>stackdeck</li>
+  <li>stomp</li>
+  <li>syntax</li>
+  <li>SystemTimer</li>
+  <li><em>systemu</em></li>
+  <li>term-ansicolor</li>
+  <li>testswarm-client</li>
+  <li>thin</li>
+  <li>thor</li>
+  <li>tilt</li>
+  <li>timecop</li>
+  <li>tmail</li>
+  <li>tmm1-amqp</li>
+  <li><em>treetop</em></li>
+  <li>trollop</li>
+  <li><em>twitter</em></li>
+  <li>tzinfo</li>
+  <li>unicorn</li>
+  <li><em>unidecode</em></li>
+  <li>user-choices</li>
+  <li><em>webrat</em></li>
+  <li>weebl</li>
+  <li><em>will_paginate</em></li>
+  <li>xml-simple</li>
+  <li>xpath</li>
+  <li>yajl-ruby</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 32; opacity: 0; "><div class="content" ref="dependencies/dependencies/23" style="margin-top: 198.5px; ">
+<pre class="sh_ruby sh_sourceCode"><code>describe My<span class="sh_symbol">::</span>Awesome<span class="sh_symbol">::</span>App <span class="sh_keyword">do</span>
+  it <span class="sh_string">"uses a bunch of testing libraries"</span> <span class="sh_keyword">do</span>
+    <span class="sh_preproc">require</span> <span class="sh_string">"rspec"</span>
+    <span class="sh_preproc">require</span> <span class="sh_string">"cucumber"</span>
+    <span class="sh_preproc">require</span> <span class="sh_string">"fakeweb"</span>
+    <span class="sh_preproc">require</span> <span class="sh_string">"capybara"</span>
+    <span class="sh_preproc">require</span> <span class="sh_string">"activerecord-nulldb-adapter"</span>
+  <span class="sh_keyword">end</span>
+<span class="sh_keyword">end</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 31; opacity: 0; "><div class="content gems" ref="dependencies/dependencies/24" style="margin-top: 104.5px; ">
+<ul>
+  <li>80legs</li>
+  <li>aasm</li>
+  <li>abstract</li>
+  <li>actionmailer</li>
+  <li>actionpack</li>
+  <li>activerecord</li>
+  <li>activerecord-nulldb-adapter</li>
+  <li>activeresource</li>
+  <li>activesupport</li>
+  <li>amazon-ec2</li>
+  <li>andand</li>
+  <li>apns</li>
+  <li>archive-tar-minitar</li>
+  <li>ar-extensions</li>
+  <li>arrayfields</li>
+  <li>asset_hat</li>
+  <li>bcrypt-ruby</li>
+  <li>bj</li>
+  <li>bson</li>
+  <li>bson_ext</li>
+  <li><em>builder</em></li>
+  <li>bundler</li>
+  <li>bunny</li>
+  <li>capistrano</li>
+  <li>capistrano-ec2group</li>
+  <li>capistrano-ext</li>
+  <li>capistrano_rsync_with_remote</li>
+  <li><em>capybara</em></li>
+  <li><em>celerity</em></li>
+  <li>cgi_multipart_eof_fix</li>
+  <li><em>childprocess</em></li>
+  <li>clickatell</li>
+  <li>columnize</li>
+  <li><em>commonwatir</em></li>
+  <li>crack</li>
+  <li>cssmin</li>
+  <li><em>cucumber</em></li>
+  <li><em>cucumber-rails</em></li>
+  <li>curb</li>
+  <li>daemons</li>
+  <li><em>database_cleaner</em></li>
+  <li>debulator</li>
+  <li><em>diff-lcs</em></li>
+</ul>
+<ul>
+  <li>dispatcher</li>
+  <li>dolphin</li>
+  <li>dolphin-redis</li>
+  <li><em>envjs</em></li>
+  <li>erubis</li>
+  <li>etc</li>
+  <li>eventful</li>
+  <li>eventmachine</li>
+  <li>extlib</li>
+  <li>ezcrypto</li>
+  <li><em>factory_girl</em></li>
+  <li><em>fakefs</em></li>
+  <li><em>fakeweb</em></li>
+  <li>faraday</li>
+  <li>fastercsv</li>
+  <li>fastthread</li>
+  <li>fast_trie</li>
+  <li>fattr</li>
+  <li>fcgi</li>
+  <li>feed-normalizer</li>
+  <li>ffi</li>
+  <li><em>firewatir</em></li>
+  <li><em>flexmock</em></li>
+  <li><em>forgery</em></li>
+  <li>garb</li>
+  <li>gem_plugin</li>
+  <li>geoip</li>
+  <li><em>gherkin</em></li>
+  <li>git_remote_branch</li>
+  <li>grit</li>
+  <li>guid</li>
+  <li>happymapper</li>
+  <li><em>harmony</em></li>
+  <li>highline</li>
+  <li>hoe</li>
+  <li>hpricot</li>
+  <li>htmlentities</li>
+  <li>httparty</li>
+  <li>httpclient</li>
+  <li>i18n</li>
+  <li>icalendar</li>
+  <li>imagesize</li>
+  <li>jake</li>
+</ul>
+<ul>
+  <li>janda</li>
+  <li><em>jazz_money</em></li>
+  <li>jeweler</li>
+  <li><em>johnson</em></li>
+  <li>jsmin</li>
+  <li>json</li>
+  <li>json_pure</li>
+  <li>kablame</li>
+  <li>kgio</li>
+  <li>km</li>
+  <li>libxml-ruby</li>
+  <li>lockfile</li>
+  <li>logging</li>
+  <li>lsof</li>
+  <li>main</li>
+  <li>mash</li>
+  <li><em>mechanize</em></li>
+  <li>mega_mutex</li>
+  <li>memcache-client</li>
+  <li>methodphitamine</li>
+  <li>mime-types</li>
+  <li>mislav-will_paginate</li>
+  <li>mms2r</li>
+  <li>mogilefs-client</li>
+  <li>mojombo-grit</li>
+  <li>mongo</li>
+  <li>mongo_ext</li>
+  <li>mongrel</li>
+  <li>msgpack</li>
+  <li>multi_json</li>
+  <li>multipart-post</li>
+  <li>multipass</li>
+  <li>mysql</li>
+  <li>netaddr</li>
+  <li>net-scp</li>
+  <li>net-sftp</li>
+  <li>net-ssh</li>
+  <li>net-ssh-gateway</li>
+  <li>nokogiri</li>
+  <li>oauth</li>
+  <li>open4</li>
+  <li>orderedhash</li>
+</ul>
+<ul>
+  <li>oyster</li>
+  <li>packr</li>
+  <li><em>parallel</em></li>
+  <li><em>parallel_tests</em></li>
+  <li>pbkdf2</li>
+  <li><em>polyglot</em></li>
+  <li>query_reviewer</li>
+  <li>rack</li>
+  <li>rack-bug</li>
+  <li>rack-protection</li>
+  <li>rack-proxy</li>
+  <li><em>rack-test</em></li>
+  <li>rails</li>
+  <li>raindrops</li>
+  <li>rake</li>
+  <li>rbtrace</li>
+  <li><em>rcov</em></li>
+  <li>RedCloth</li>
+  <li>redis</li>
+  <li>request-log-analyzer</li>
+  <li>retryable</li>
+  <li>right_aws</li>
+  <li>right_http_connection</li>
+  <li>rmagick</li>
+  <li><em>rr</em></li>
+  <li>rsolr</li>
+  <li><em>rspec</em></li>
+  <li><em>rspec-core</em></li>
+  <li><em>rspec-expectations</em></li>
+  <li><em>rspec-extra-formatters</em></li>
+  <li><em>rspec-mocks</em></li>
+  <li><em>rspec-rails</em></li>
+  <li>rubigen</li>
+  <li>rubyforge</li>
+  <li>ruby-hmac</li>
+  <li>ruby-openid</li>
+  <li>ruby-prof</li>
+  <li>rubyzip</li>
+  <li>s4t-utils</li>
+  <li><em>selenium-webdriver</em></li>
+  <li>sequel</li>
+  <li>service-stats</li>
+</ul>
+<ul>
+  <li>shared-mime-info</li>
+  <li>simple_oauth</li>
+  <li>simple-rss</li>
+  <li>sinatra</li>
+  <li>sk-process-management</li>
+  <li>smusher</li>
+  <li>solr-ruby</li>
+  <li>songkick-base-service</li>
+  <li>songkick-hammer</li>
+  <li>songkick-oauth2-provider</li>
+  <li>songkick-rack-middleware</li>
+  <li>songkick-recipes</li>
+  <li>songkick-transport</li>
+  <li>spacer</li>
+  <li><em>spork</em></li>
+  <li><em>sqlite3-ruby</em></li>
+  <li>stackdeck</li>
+  <li>stomp</li>
+  <li>syntax</li>
+  <li>SystemTimer</li>
+  <li>systemu</li>
+  <li><em>term-ansicolor</em></li>
+  <li><em>testswarm-client</em></li>
+  <li>thin</li>
+  <li>thor</li>
+  <li>tilt</li>
+  <li>timecop</li>
+  <li>tmail</li>
+  <li>tmm1-amqp</li>
+  <li><em>treetop</em></li>
+  <li>trollop</li>
+  <li>twitter</li>
+  <li>tzinfo</li>
+  <li>unicorn</li>
+  <li>unidecode</li>
+  <li>user-choices</li>
+  <li><em>webrat</em></li>
+  <li>weebl</li>
+  <li>will_paginate</li>
+  <li>xml-simple</li>
+  <li>xpath</li>
+  <li>yajl-ruby</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 30; opacity: 0; "><div class="content title" ref="dependencies/dependencies/25" style="margin-top: 304px; ">
+<h2>Step 3:</h2>
+
+<h1>Break the dependencies</h1>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 29; opacity: 0; "><div class="content bullets" ref="services/services/1" style="margin-top: 200px; ">
+<h1>We abstracted shared logic into web services</h1>
+
+<ul>
+<li>Split along domain boundaries</li>
+<li>Encapsulate data stores and business logic</li>
+<li>APIs designed around use cases</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 28; opacity: 0; "><div class="content title" ref="services/services/2" style="margin-top: 304px; ">
+<h1>ActiveRecord APIs reflect database schemas</h1>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 27; opacity: 0; "><div class="content title" ref="services/services/3" style="margin-top: 304px; ">
+<h1>Service APIs reflect clients’ common use cases</h1>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 26; opacity: 0; "><div class="content title" ref="services/services/4" style="margin-top: 344px; ">
+<h1>An object graph != an API</h1>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 25; opacity: 0; "><div class="content bullets" ref="services/services/5" style="margin-top: 240px; ">
+<h1>For a concert, we want:</h1>
+
+<ul>
+<li>The date</li>
+<li>The venue, its city and country</li>
+<li>The artists performing and their billing</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 24; opacity: 0; "><div class="content listing" ref="services/services/6" style="margin-top: 99.5px; ">
+<h1>An graph-based API</h1>
+
+<pre><code>$ curl http://service/concerts/123
+{
+  "date": "20121008T19:30:00Z",
+  "links": {
+    "venue": "http://service/venues/456",
+    "performances": [
+      "http://service/performances/789",
+      "http://service/performances/123"
+    ]
+  }
+}
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 23; opacity: 0; "><div class="content listing" ref="services/services/7" style="margin-top: 21.5px; ">
+<h1>A use-case-based API</h1>
+
+<pre><code>$ curl http://service/concerts/123
+{
+  "date": "20121008T19:30:00Z",
+  "venue": {
+    "name": "Brixton Academy",
+    "city": {
+      "name": "London",
+      "country" {"name": "UK"}
+    }
+  },
+  "artists": [
+    {"name": "Radiohead", "billing": "headline"},
+    {"name": "Caribou",   "billing": "support"}
+  ]
+}
+</code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 22; opacity: 0; "><div class="content quote" ref="services/services/8" style="margin-top: 216px; ">
+<blockquote>
+<p>Remember that the job of your model layer is not to represent objects but to
+answer questions. Provide an API that answers the questions your application
+has, as simply and efficiently as possible.</p>
+</blockquote>
+
+<p>http://seldo.com/weblog/2011/08/11/orm_is_an_antipattern/</p>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 21; opacity: 0; "><div class="content bullets" ref="services/services/9" style="margin-top: 212px; ">
+<h1>Result:</h1>
+
+<ul>
+<li>An explicit stable API layer</li>
+<li>Decouples app processes from ActiveRecord and more</li>
+<li>Can begin splitting business logic up</li>
+<li>Can begin splitting data store up</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 20; opacity: 0; "><div class="content bullets" ref="clients/clients/1" style="margin-top: 100px; ">
+<h1>HTTP introduces complexity</h1>
+
+<ul>
+<li>Serializing parameters and responses</li>
+<li>Query strings vs entity bodies</li>
+<li>Multipart uploads</li>
+<li>Hostname discovery</li>
+<li>DNS failure</li>
+<li>Connection failure</li>
+<li>Response timeout</li>
+<li>Validation errors</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 19; opacity: 0; "><div class="content title" ref="clients/clients/2" style="margin-top: 344px; ">
+<h1>Solve each problem once</h1>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 18; opacity: 0; "><div class="content bullets" ref="clients/clients/3" style="margin-top: 212px; ">
+<h1>Client-side goals</h1>
+
+<ul>
+<li>Minimal integration code</li>
+<li>Easy to stub out</li>
+<li>Straight-forward error handling</li>
+<li>Instrumentation</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 17; opacity: 0; "><div class="content" ref="clients/clients/4" style="margin-top: 158px; ">
+<h1>Difficult</h1>
+
+<pre class="sh_ruby sh_sourceCode"><code>uri <span class="sh_symbol">=</span> URI<span class="sh_symbol">.</span>parse<span class="sh_symbol">(</span><span class="sh_string">"http://accounts/users/#{name}"</span><span class="sh_symbol">)</span>
+http <span class="sh_symbol">=</span> Net<span class="sh_symbol">::</span>HTTP<span class="sh_symbol">.</span>new<span class="sh_symbol">(</span>uri<span class="sh_symbol">.</span>host<span class="sh_symbol">,</span> uri<span class="sh_symbol">.</span>port<span class="sh_symbol">)</span>
+response <span class="sh_symbol">=</span> http<span class="sh_symbol">.</span>request_get<span class="sh_symbol">(</span>uri<span class="sh_symbol">.</span>path<span class="sh_symbol">)</span>
+<span class="sh_keyword">if</span> response<span class="sh_symbol">.</span>code <span class="sh_symbol">==</span> <span class="sh_string">'200'</span>
+  JSON<span class="sh_symbol">.</span>parse<span class="sh_symbol">(</span>response<span class="sh_symbol">.</span>body<span class="sh_symbol">)</span>
+<span class="sh_keyword">else</span>
+  <span class="sh_keyword">raise</span> NotFound
+<span class="sh_keyword">end</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 16; opacity: 0; "><div class="content" ref="clients/clients/5" style="margin-top: 275px; ">
+<h1>Easy</h1>
+
+<pre class="sh_ruby sh_sourceCode"><code>http <span class="sh_symbol">=</span> Songkick<span class="sh_symbol">::</span>Transport<span class="sh_symbol">::</span>Curb<span class="sh_symbol">.</span>new<span class="sh_symbol">(</span><span class="sh_string">'http://accounts'</span><span class="sh_symbol">)</span>
+http<span class="sh_symbol">.</span>get<span class="sh_symbol">(</span><span class="sh_string">"/users/#{name}"</span><span class="sh_symbol">).</span>data</code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 15; opacity: 0; "><div class="content bullets" ref="clients/clients/6" style="margin-top: 212px; ">
+<h1>Songkick::Transport</h1>
+
+<ul>
+<li>JSON over HTTP</li>
+<li>Handles serialization and parsing</li>
+<li>Same API over Curb, HTTParty or Rack::Test</li>
+<li>All types of errors raise exceptions</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 14; opacity: 0; "><div class="content" ref="clients/clients/7" style="margin-top: 101px; ">
+<pre class="sh_ruby sh_sourceCode"><code><span class="sh_keyword">module</span> Services
+
+  <span class="sh_keyword">class</span> AccountsClient
+    <span class="sh_keyword">def</span> initialize<span class="sh_symbol">(</span>http_client<span class="sh_symbol">)</span>
+      <span class="sh_type">@http</span> <span class="sh_symbol">=</span> http_client
+    <span class="sh_keyword">end</span>
+
+    <span class="sh_keyword">def</span> find_user<span class="sh_symbol">(</span>username<span class="sh_symbol">)</span>
+      data <span class="sh_symbol">=</span> <span class="sh_type">@http</span><span class="sh_symbol">.</span>get<span class="sh_symbol">(</span><span class="sh_string">"/users/#{username}"</span><span class="sh_symbol">).</span>data
+      Models<span class="sh_symbol">::</span>User<span class="sh_symbol">.</span>new<span class="sh_symbol">(</span>data<span class="sh_symbol">)</span>
+    <span class="sh_keyword">end</span>
+  <span class="sh_keyword">end</span>
+
+<span class="sh_keyword">end</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 13; opacity: 0; "><div class="content" ref="clients/clients/8" style="margin-top: 120.5px; ">
+<pre class="sh_ruby sh_sourceCode"><code><span class="sh_keyword">module</span> Models
+
+  <span class="sh_keyword">class</span> User
+    <span class="sh_keyword">def</span> initialize<span class="sh_symbol">(</span>data<span class="sh_symbol">)</span>
+      <span class="sh_type">@data</span> <span class="sh_symbol">=</span> data
+    <span class="sh_keyword">end</span>
+
+    <span class="sh_keyword">def</span> username
+      <span class="sh_type">@data</span><span class="sh_symbol">[</span><span class="sh_string">'username'</span><span class="sh_symbol">]</span>
+    <span class="sh_keyword">end</span>
+  <span class="sh_keyword">end</span>
+
+<span class="sh_keyword">end</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 12; opacity: 0; "><div class="content" ref="clients/clients/9" style="margin-top: 81.5px; ">
+<pre class="sh_ruby sh_sourceCode"><code>before <span class="sh_keyword">do</span>
+  <span class="sh_type">@http</span>   <span class="sh_symbol">=</span> mock<span class="sh_symbol">(</span><span class="sh_string">'Transport'</span><span class="sh_symbol">)</span>
+  <span class="sh_type">@client</span> <span class="sh_symbol">=</span> Services<span class="sh_symbol">::</span>AccountsClient<span class="sh_symbol">.</span>new<span class="sh_symbol">(</span><span class="sh_type">@http</span><span class="sh_symbol">)</span>
+<span class="sh_keyword">end</span>
+
+it <span class="sh_string">"returns a User"</span> <span class="sh_keyword">do</span>
+  data <span class="sh_symbol">=</span> <span class="sh_cbracket">{</span><span class="sh_string">'username'</span> <span class="sh_symbol">=&gt;</span> <span class="sh_string">'jcoglan'</span><span class="sh_cbracket">}</span>
+  response <span class="sh_symbol">=</span> mock<span class="sh_symbol">(</span><span class="sh_string">'Response'</span><span class="sh_symbol">,</span> <span class="sh_symbol">:</span>data <span class="sh_symbol">=&gt;</span> data<span class="sh_symbol">)</span>
+
+  <span class="sh_type">@http</span><span class="sh_symbol">.</span>stub<span class="sh_symbol">(:</span>get<span class="sh_symbol">).</span>with<span class="sh_symbol">(</span><span class="sh_string">'/users/jcoglan'</span><span class="sh_symbol">).</span>
+      and_return<span class="sh_symbol">(</span>response<span class="sh_symbol">)</span>
+
+  <span class="sh_type">@client</span><span class="sh_symbol">.</span>find_user<span class="sh_symbol">(</span><span class="sh_string">'jcoglan'</span><span class="sh_symbol">).</span>username<span class="sh_symbol">.</span>
+      should <span class="sh_symbol">==</span> <span class="sh_string">'jcoglan'</span>
+<span class="sh_keyword">end</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 11; opacity: 0; "><div class="content" ref="clients/clients/10" style="margin-top: 296px; ">
+<pre class="sh_ruby sh_sourceCode"><code>it <span class="sh_string">"tells the service to delete a User"</span> <span class="sh_keyword">do</span>
+  <span class="sh_type">@http</span><span class="sh_symbol">.</span>should_receive<span class="sh_symbol">(:</span>delete<span class="sh_symbol">).</span>with<span class="sh_symbol">(</span><span class="sh_string">'/users/jcoglan'</span><span class="sh_symbol">)</span>
+  <span class="sh_type">@client</span><span class="sh_symbol">.</span>delete_user<span class="sh_symbol">(</span><span class="sh_string">'jcoglan'</span><span class="sh_symbol">)</span>
+<span class="sh_keyword">end</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 10; opacity: 0; "><div class="content" ref="clients/clients/11" style="margin-top: 294.5px; ">
+<h1>Stubbable</h1>
+
+<pre class="sh_ruby sh_sourceCode"><code>http<span class="sh_symbol">.</span>get<span class="sh_symbol">(</span><span class="sh_string">'/'</span><span class="sh_symbol">,</span> <span class="sh_symbol">:</span>foo <span class="sh_symbol">=&gt;</span> <span class="sh_string">'bar'</span><span class="sh_symbol">,</span> <span class="sh_symbol">:</span>something <span class="sh_symbol">=&gt;</span> <span class="sh_string">'else'</span><span class="sh_symbol">)</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 9; opacity: 0; "><div class="content" ref="clients/clients/12" style="margin-top: 294.5px; ">
+<h1>Not stubbable</h1>
+
+<pre class="sh_ruby sh_sourceCode"><code>http<span class="sh_symbol">.</span>get<span class="sh_symbol">(</span><span class="sh_string">'/?foo=bar&amp;something=else'</span><span class="sh_symbol">)</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 8; opacity: 0; "><div class="content title" ref="clients/clients/13" style="margin-top: 304px; ">
+<h1>Flexibility vs. convenience</h1>
+
+<h2>Pick the first, and you can add the second later</h2>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 7; opacity: 0; "><div class="content" ref="clients/clients/14" style="margin-top: 255.5px; ">
+<h1>Flexible</h1>
+
+<pre class="sh_ruby sh_sourceCode"><code>http   <span class="sh_symbol">=</span> Songkick<span class="sh_symbol">::</span>Transport<span class="sh_symbol">::</span>Curb<span class="sh_symbol">.</span>new<span class="sh_symbol">(</span><span class="sh_string">'...'</span><span class="sh_symbol">)</span>
+client <span class="sh_symbol">=</span> Services<span class="sh_symbol">::</span>AccountsClient<span class="sh_symbol">.</span>new<span class="sh_symbol">(</span>http<span class="sh_symbol">)</span>
+user   <span class="sh_symbol">=</span> client<span class="sh_symbol">.</span>find_user<span class="sh_symbol">(</span>params<span class="sh_symbol">[:</span>username<span class="sh_symbol">])</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 6; opacity: 0; "><div class="content" ref="clients/clients/15" style="margin-top: 294.5px; ">
+<h1>Convenient</h1>
+
+<pre class="sh_ruby sh_sourceCode"><code>user <span class="sh_symbol">=</span> Services<span class="sh_symbol">.</span>accounts<span class="sh_symbol">.</span>find_user<span class="sh_symbol">(</span>params<span class="sh_symbol">[:</span>username<span class="sh_symbol">])</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; "><div class="content" ref="clients/clients/16" style="margin-top: 99.5px; ">
+<h1>Provide a convenient default</h1>
+
+<pre class="sh_ruby sh_sourceCode"><code><span class="sh_keyword">module</span> Services
+
+  <span class="sh_keyword">def</span> <span class="sh_keyword">self</span><span class="sh_symbol">.</span>accounts
+    <span class="sh_type">@accounts</span> <span class="sh_symbol">||=</span> <span class="sh_keyword">begin</span>
+      endpoint <span class="sh_symbol">=</span> <span class="sh_string">'http://accounts-service'</span>
+      http <span class="sh_symbol">=</span> Songkick<span class="sh_symbol">::</span>Transport<span class="sh_symbol">::</span>Curb<span class="sh_symbol">.</span>new<span class="sh_symbol">(</span>endpoint<span class="sh_symbol">)</span>
+      AccountsClient<span class="sh_symbol">.</span>new<span class="sh_symbol">(</span>http<span class="sh_symbol">)</span>
+    <span class="sh_keyword">end</span>
+  <span class="sh_keyword">end</span>
+
+<span class="sh_keyword">end</span></code></pre>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 4; opacity: 0; "><div class="content bullets" ref="clients/clients/17" style="margin-top: 240px; ">
+<h1>Result:</h1>
+
+<ul>
+<li>Convenient and flexible API for service calls</li>
+<li>Interfaces can be stubbed for tests</li>
+<li>No I/O means fast tests</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 3; opacity: 0; "><div class="content title" ref="outro/outro/1" style="margin-top: 304px; ">
+<h1>Repeat after me</h1>
+
+<h2>Sometimes, you should repeat yourself</h2>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 2; opacity: 0; "><div class="content bullets" ref="outro/outro/2" style="margin-top: 244px; ">
+<h1>Some advice</h1>
+
+<h2>Don’t do this too early</h2>
+
+<h2>Learn your domain before splitting it up</h2>
+
+<h2>Keep an eye on modularity</h2>
+</div>
+</div><div class="slide" data-transition="none" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 1; opacity: 0; "><div class="content bullets" ref="outro/outro/3" style="margin-top: 240px; ">
+<h1>Thank you.</h1>
+
+<ul>
+<li>http://github.com/songkick/transport</li>
+<li>http://www.songkick.com/devblog</li>
+<li>We’re hiring</li>
+</ul>
+</div>
+</div></div>
+<div id="footer">
+  <span id="slideInfo">1/56	- 2%</span>
+  <span id="debugInfo" style="display: none; ">keyUp: 17</span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style=""></div>
+<div id="pauseScreen">
+  
+</div>
+
+
+
+</body></html>

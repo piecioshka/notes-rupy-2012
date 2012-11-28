@@ -1,0 +1,25 @@
+Braking the big ball of mud
+===========================
+
+Prelegend: James Coglan /@jcoglan
+http://slides.jcoglan.com
+
+Dependency hell
+and how we got out of it
+
+app/
+    controllers/
+    models/
+    views/
+features/
+lib/
+vendor/
+    api/
+    batch_processing/
+    daemons/
+    file_store/
+    notifications/
+    web_screappers/
+    
+htt://github.com/songkick/transport
+http://www.songkick.com/devblog

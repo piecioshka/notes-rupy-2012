@@ -1,0 +1,61 @@
+Come to the Dart side!
+We have cookie!
+======================
+
+Oh my Dart!
+ladicek.github.com
+
+Dart is made for
+- "The modern web"
+- "Easy of use"
+- "Performacne"
+- "Tooling"
+
+So dart is a coole langunage - it's rathe boring
+Building blocks
+Braces & semicolons
+
+Typing - Dynamic
+Optional type annotations
+> and generics
+> for documentation and tooling
+
+"Innocent until proven guilty"
+
+Concurrency
+Single-threaded is good
+Except when it isn't
+
+No shared memory
+Actors > Isolators
+
+Isolated threads
+
+Lightweight isolated thread
+Base on names
+Only for libraries
+
+Suugar
+Only the important right now
+
+Performance
+Fast startup
+Program elements are declared
+Snapshotting
+Diet parsing
+Compile-time constants
+Fast runtime
+Beats V8 already (on some benchmarks)
+And it just the begginning
+
+Tooling
+Dart Editor
+Intellij IDEA / WabStorm
+
+So what is it all about?
+Structure!
+
+
+Community
+three.dart
+
